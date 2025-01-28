@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .r-sidebar {
+        position: fixed;
+        background-color: green;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100px;
+        color: white;
+      }
+      .overlay {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .model {
+        background-color: white;
+        width: 300px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 0;
+        top: 300px;
+      }
+      .model-title {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      .model-content {
+        font-family: Arial;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="r-sidebar">right sidebar</div>
+    <div class="overlay">
+      <div class="model">
+        <div class="model-title">Model Title</div>
+        <div class="model-content">This is a model</div>
+        <button>Close</button>
+      </div>
+    </div>
+  </body>
+</html>
